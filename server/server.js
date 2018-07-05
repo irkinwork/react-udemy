@@ -15,6 +15,7 @@
  app.use(bodyParser.json())
  app.use(cookieParser())
 
+ app.use(expres.static('client/build'))
 
  // GET //
 
@@ -100,6 +101,8 @@ app.delete('/api/delete_book', (req,res) =>{
     res.json(true)
   })
 }) 
+
+
  // POST //
 
  app.post('/api/book', (req,res)=>{
@@ -146,6 +149,16 @@ app.delete('/api/delete_book', (req,res) =>{
        })
    })
  })
+
+
+ if (process.env.NODE_ENV === 'production'){
+  const path = require('path');
+  app.get('/*', (req,res)=>{
+    res.sendfile(path.resolve(__dirname, '../client', 'build', 'index.html'))
+  })
+}
+
+
  const port = process.env.PORT || 3001;
 
  app.listen(port, ()=>{
