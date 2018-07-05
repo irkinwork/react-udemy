@@ -4,7 +4,7 @@ const config = {
     DATABASE: process.env.MONGODB_URI
   },
   default: {
-    SECRET: 'SUP ERSECRETPASSWORD123',
+    SECRET: 'SUPERSECRETPASSWORD123',
     DATABASE: 'mongodb://localhost:27017/booksShelf'
 
   }
