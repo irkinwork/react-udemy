@@ -25,7 +25,8 @@ const SidenavItems = ({user}) => {
       icon:'file-text-o',
       text:'Add Admins',
       link:'/user/register',
-      restricted:true
+      restricted:false,
+      excluded: true
     },
     {
       type:'navItem',
