@@ -9,9 +9,9 @@ const config = {
   }
 }
 
-exports.get = function get(env){
-  return config[env] || config.default
-}
+// exports.get = function get(env){
+//   return config[env] || config.default
+// }
 
 module.exports = {  
   SECRET: process.env.SECRET || "SUPERSECRETPASSWORD123",
