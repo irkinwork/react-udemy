@@ -14,6 +14,6 @@ exports.get = function get(env){
 }
 
 module.exports = {  
-  SECRET: process.env.SECRET || "whatever your secret is",
+  SECRET: process.env.SECRET || "SUPERSECRETPASSWORD123",
   DATABASE: process.env.DB || "mongodb://localhost:27017/booksShelf"
 }

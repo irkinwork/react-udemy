@@ -2,7 +2,7 @@
  const bodyParser = require('body-parser');
  const cookieParser = require('cookie-parser');
  const mongoose = require('mongoose');
- const config = require('./config/config').get(process.env.NODE_ENV)
+ const config = require('./config/config');
  const app = express();
 
  mongoose.Promise = global.Promise;
