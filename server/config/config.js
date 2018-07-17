@@ -1,12 +1,12 @@
 const config = {
   production: {
     SECRET: process.env.SECRET,
-    DATABASE: process.env.MONGODB_URI
+    DATABASE: process.env.MONGOLAB_URI
   },
-  // default: {
-  //   SECRET: 'SUPERSECRETPASSWORD123',
-  //   DATABASE: 'mongodb://localhost:27017/booksShelf'
-  // }
+  default: {
+    SECRET: 'SUPERSECRETPASSWORD123',
+    DATABASE: 'mongodb://localhost:27017/booksShelf'
+  }
 }
 
 exports.get = function get(env){

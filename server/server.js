@@ -163,4 +163,7 @@ app.delete('/api/delete_book', (req,res) =>{
 
  app.listen(port, ()=>{
    console.log('server running')
+   console.log(process.env.PORT)
+   console.log(process.env.MONGOLAB_URI)
+   console.log(process.env.SECRET)
  })
