@@ -2,7 +2,7 @@
  const bodyParser = require('body-parser');
  const cookieParser = require('cookie-parser');
  const mongoose = require('mongoose');
- const config = require('./config/config');
+ const config = require('./config/config').get(process.env.NODE_ENV)
  const app = express();
 
  mongoose.Promise = global.Promise;
@@ -163,7 +163,4 @@ app.delete('/api/delete_book', (req,res) =>{
 
  app.listen(port, ()=>{
    console.log('server running')
-   console.log(process.env.PORT)
-   console.log(process.env.MONGOLAB_URI)
-   console.log(process.env.SECRET)
  })
