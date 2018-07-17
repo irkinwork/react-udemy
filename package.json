@@ -28,14 +28,5 @@
     "moment-js": "^1.1.15",
     "mongoose": "^4.10.8",
     "nodemon": "^1.17.5"
-  },
-  "now": {
-    "alias":"class-demo",
-    "name": "class-demo",
-    "env": {
-      "PORT": 139841,
-      "SECRET": "@db",
-      "DB": "@secret"
-    }
   }
 }
