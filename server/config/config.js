@@ -12,3 +12,8 @@ const config = {
 exports.get = function get(env){
   return config[env] || config.default
 }
+
+module.exports = {  
+  SECRET: process.env.SECRET || "whatever your secret is",
+  DATABASE: process.env.DB || "mongodb://localhost:27017/booksShelf"
+}
