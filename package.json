@@ -34,8 +34,8 @@
     "name": "class-demo",
     "env": {
       "PORT": 139841,
-      "SECRET": "",
-      "DB": "booksshelf"
+      "SECRET": "@db",
+      "DB": "@secret"
     }
   }
 }
