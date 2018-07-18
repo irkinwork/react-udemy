@@ -1,5 +1,6 @@
 {
   "env": {
-    "MONGODB_URI": "mongodb://test:pass123@ds019498.ds139841.mlab.com:39841/booksshelf"
+    "NODE_ENV": "production",
+    "MONGODB_URI": "mongodb://<dbuser>:<dbpassword>@ds139841.mlab.com:39841/booksshelf"
   }
 }

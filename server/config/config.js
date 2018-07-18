@@ -1,10 +1,12 @@
 const config = {
   production: {
-    DATABASE: "mongodb://test:pass123@ds019498.ds139841.mlab.com:39841/booksshelf"
+    SECRET: process.env.SECRET,
+    DATABASE: process.env.MONGODB_URI
   },
   default: {
     SECRET: 'SUPERSECRETPASSWORD123',
     DATABASE: 'mongodb://localhost:27017/booksShelf'
+
   }
 }
 
