@@ -1,7 +1,7 @@
 const config = {
   production: {
     SECRET: process.env.SECRET,
-    DATABASE: process.env.MONGODB_URI
+    DATABASE: 'test:pass123@ds019498.ds139841.mlab.com:39841/booksshelf'
   },
   default: {
     SECRET: 'SUPERSECRETPASSWORD123',
