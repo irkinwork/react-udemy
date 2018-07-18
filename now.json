@@ -1,6 +1,7 @@
 {
   "env": {
     "NODE_ENV": "production",
+    "SECRET": "@secret",
     "MONGODB_URI": "@db"
   }
 }
