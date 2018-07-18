@@ -6,7 +6,7 @@
  const app = express();
 
  mongoose.Promise = global.Promise;
- mongoose.connect(config.DATABASE)
+ mongoose.connect("mongodb://test:pass123@ds019498.ds139841.mlab.com:39841/booksshelf")
 
  const {User} = require('./models/user')
  const {Book} = require('./models/book')
@@ -163,4 +163,5 @@ app.delete('/api/delete_book', (req,res) =>{
 
  app.listen(port, ()=>{
    console.log('server running')
+   console.log(mongoose.Promise)
  })
