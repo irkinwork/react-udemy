@@ -6,7 +6,7 @@
  const app = express();
 
  mongoose.Promise = global.Promise;
- mongoose.connect("mongodb://test:pass123@ds019498.ds139841.mlab.com:39841/booksshelf")
+ mongoose.connect("mongodb://test:pass123@ds139841.mlab.com:39841/booksshelf")
 
  const {User} = require('./models/user')
  const {Book} = require('./models/book')
